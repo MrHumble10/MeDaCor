@@ -4,8 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 
 app = Flask("__name__")
-app.config['SECRET_KEY'] = '123456789'
-# os.environ.get('SECRET_KEY')123456789Rez@Forout@nM@nesh123456789
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config["UPLOAD_FILE"] = './static/assets/uploaded_img'
 NAME = 'uploaded_img'
 IMG_FORMAT = ''
